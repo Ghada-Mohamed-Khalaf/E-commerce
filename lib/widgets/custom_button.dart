@@ -1,4 +1,5 @@
 import 'package:ecommerce/costants.dart';
+import 'package:ecommerce/views/sign_up.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -11,7 +12,7 @@ final  String text;
       onTap: (){
         Navigator.push(context, MaterialPageRoute(builder:(context)
         {
-          return SigUp();
+          return SignUp();
         }));
 
 

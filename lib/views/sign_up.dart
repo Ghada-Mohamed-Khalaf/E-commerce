@@ -34,7 +34,7 @@ class SignUp extends StatelessWidget {
                 SizedBox(height: 30,),
 
                 CustomButton(
-                    text:"Sign in"),
+                    text:"Sign up"),
 
                 SizedBox(height: 30,),
                 Row(
@@ -49,7 +49,7 @@ class SignUp extends StatelessWidget {
                     }));
                     },
 
-                      child:const Text("login",style: TextStyle(color: Colors.blue,fontSize: 20),),
+                      child:const Text("Sign in",style: TextStyle(color: Colors.blue,fontSize: 20),),
 
 
 

@@ -11,7 +11,7 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.teal,
+        //backgroundColor: Colors.teal,
         body: Center(
       child: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -35,7 +35,7 @@ class Login extends StatelessWidget {
             SizedBox(height: 30,),
       
             CustomButton(
-              text:"Sign in"),
+              text:"Sign up"),
       
             SizedBox(height: 30,),
             Row(

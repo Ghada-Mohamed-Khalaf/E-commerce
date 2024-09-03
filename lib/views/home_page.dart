@@ -14,10 +14,10 @@ class HomePage extends StatelessWidget {
         actions: [
           Row(
             children: [
-              IconButton(onPressed: (){}, icon: Icon(Icons.add_shopping_cart),),
+              IconButton(onPressed: (){}, icon: Icon(Icons.add_shopping_cart,color: Colors.white,),),
               Padding(
                 padding: const EdgeInsets.all(12.0),
-                child: Text("\$13",style: TextStyle(fontSize: 19),),
+                child: Text("\$13",style: TextStyle(fontSize: 19,color: Colors.white),),
               ),
 
 

@@ -15,7 +15,10 @@ class HomePage extends StatelessWidget {
           Row(
             children: [
               IconButton(onPressed: (){}, icon: Icon(Icons.add_shopping_cart),),
-              Text("\$13",style: TextStyle(fontSize: 19),),
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Text("\$13",style: TextStyle(fontSize: 19),),
+              ),
 
 
             ],

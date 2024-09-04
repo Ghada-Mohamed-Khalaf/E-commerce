@@ -25,8 +25,15 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(),
                   ),
                   accountEmail: Text("ghada@gmail.com"),),
+            ListTile(
+              title: Text("Home"),
+              leading: Icon(Icons.home),
+              onTap: (){},
+            ),
+
     ],
             ),
+
 
 
         ),

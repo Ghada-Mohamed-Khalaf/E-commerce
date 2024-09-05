@@ -1,8 +1,26 @@
 import 'package:ecommerce/costants.dart';
+import 'package:ecommerce/models/product.dart';
 import 'package:flutter/material.dart';
 
+
+
+
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+   HomePage({super.key});
+List productModel=[
+  ProductModel(imageUrl:"assets/image/1.jpg", price:12.99, name: 'plant' ,),
+  ProductModel(imageUrl:"assets/image/2.jpg", price:12.99, name: 'plant' ,),
+  ProductModel(imageUrl:"assets/image/3.jpg", price:12.99, name: 'plant' ,),
+  ProductModel(imageUrl:"assets/image/4.jpg", price:12.99, name: 'plant' ,),
+  ProductModel(imageUrl:"assets/image/5.jpg", price:12.99, name: 'plant' ,),
+  ProductModel(imageUrl:"assets/image/6.jpg", price:12.99, name: 'plant' ,),
+  ProductModel(imageUrl:"assets/image/7.jpg", price:12.99, name: 'plant' ,),
+  ProductModel(imageUrl:"assets/image/8.jpg", price:12.99, name: 'plant' ,),
+
+
+
+];
+
 
   @override
   Widget build(BuildContext context) {
@@ -95,7 +113,7 @@ class HomePage extends StatelessWidget {
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 30,
                 childAspectRatio: 3 / 2),
-            itemCount: 4,
+            itemCount: productModel.length,
             itemBuilder: (BuildContext context, int index) {
               return GestureDetector(
                 onTap: (){},
@@ -109,9 +127,19 @@ class HomePage extends StatelessWidget {
                       child:
                       ClipRRect(
                         borderRadius: BorderRadius.circular(80),
-                        child: Image.asset("assets/image/1.jpg")),
+                        child: Image.asset(productModel[index].imageUrl)),
                     ),
                 ],
+                  ),
+                  footer: GridTileBar
+                    (trailing: IconButton(onPressed: (){}, icon: Icon(Icons.add,color: Colors.black,)),
+
+
+
+                   leading: Text("\$ 10"),
+                    title: Text(""),
+
+                    
                   ),
 
                 ),

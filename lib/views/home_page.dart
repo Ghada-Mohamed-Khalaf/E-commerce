@@ -12,47 +12,43 @@ class HomePage extends StatelessWidget {
           children: [
             UserAccountsDrawerHeader(
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/image/nature2.jpg"),
-                  fit: BoxFit.cover),
-    ),
-                  currentAccountPicture: CircleAvatar(
-                    radius: 55,
-                    backgroundImage: AssetImage("assets/image/ghada.jpg"),
-                  ),
-                  accountName: Text(
-                    "Ghada Mohamed ",
-                    style: TextStyle(),
-                  ),
-                  accountEmail: Text("ghada@gmail.com"),),
+                image: DecorationImage(
+                    image: AssetImage("assets/image/nature2.jpg"),
+                    fit: BoxFit.cover),
+              ),
+              currentAccountPicture: CircleAvatar(
+                radius: 55,
+                backgroundImage: AssetImage("assets/image/ghada.jpg"),
+              ),
+              accountName: Text(
+                "Ghada Mohamed ",
+                style: TextStyle(),
+              ),
+              accountEmail: Text("ghada@gmail.com"),
+            ),
             ListTile(
               title: Text("Home"),
               leading: Icon(Icons.home),
-              onTap: (){},
+              onTap: () {},
             ),
             ListTile(
               title: Text("My Products"),
               leading: Icon(Icons.add_shopping_cart),
-              onTap: (){},
+              onTap: () {},
             ),
             ListTile(
               title: Text("About"),
               leading: Icon(Icons.help_center),
-              onTap: (){},
+              onTap: () {},
             ),
             ListTile(
               title: Text("Logout"),
               leading: Icon(Icons.exit_to_app),
-              onTap: (){},
+              onTap: () {},
             ),
-
-    ],
-            ),
-
-
-
+          ],
         ),
-
+      ),
       appBar: AppBar(
         backgroundColor: kPrimaryColor,
         title: Text(
@@ -91,7 +87,37 @@ class HomePage extends StatelessWidget {
           )
         ],
       ),
-      body: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2), itemBuilder: (BuildContext context,int index)),
+      body: Padding(
+        padding: const EdgeInsets.only(top:20),
+        child: GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 30,
+                childAspectRatio: 3 / 2),
+            itemCount: 4,
+            itemBuilder: (BuildContext context, int index) {
+              return GestureDetector(
+                onTap: (){},
+                child: GridTile(
+                  child: Stack(
+                    children:[ Positioned(
+                      right: 0,
+                      left: 0,
+                      top: -3,
+                      bottom: -9,
+                      child:
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(80),
+                        child: Image.asset("assets/image/1.jpg")),
+                    ),
+                ],
+                  ),
+
+                ),
+              );
+            }),
+      ),
     );
   }
 }

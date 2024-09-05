@@ -7,19 +7,7 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
-List productModel=[
-  ProductModel(imageUrl:"assets/image/1.jpg", price:12.99, name: 'plant' ,),
-  ProductModel(imageUrl:"assets/image/2.jpg", price:12.99, name: 'plant' ,),
-  ProductModel(imageUrl:"assets/image/3.jpg", price:12.99, name: 'plant' ,),
-  ProductModel(imageUrl:"assets/image/4.jpg", price:12.99, name: 'plant' ,),
-  ProductModel(imageUrl:"assets/image/5.jpg", price:12.99, name: 'plant' ,),
-  ProductModel(imageUrl:"assets/image/6.jpg", price:12.99, name: 'plant' ,),
-  ProductModel(imageUrl:"assets/image/7.jpg", price:12.99, name: 'plant' ,),
-  ProductModel(imageUrl:"assets/image/8.jpg", price:12.99, name: 'plant' ,),
 
-
-
-];
 
 
   @override

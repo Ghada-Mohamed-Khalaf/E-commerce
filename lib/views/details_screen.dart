@@ -68,6 +68,26 @@ class DetailsScreen extends StatelessWidget {
 
                   ),
                 ),
+                Row(
+                  children: [
+                    Icon(Icons.star,color: Colors.yellow,size: 30),
+
+
+                Icon(Icons.star,color: Colors.yellow,size: 30,),
+                Icon(Icons.star,color: Colors.yellow,size: 30),
+                Icon(Icons.star,color: Colors.yellow,size: 30),
+                Icon(Icons.star,color: Colors.yellow,size: 30),
+      ],
+    ),
+                SizedBox(width: 50,),
+                Row(children: [
+                  Icon(Icons.edit_location),
+                  SizedBox(width: 5,),
+                  Text("Flowers Shop",style: TextStyle(fontSize: 20),),
+                ],
+                  
+                ),
+                
               ],
 
 

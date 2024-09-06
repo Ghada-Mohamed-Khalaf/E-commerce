@@ -60,7 +60,7 @@ class DetailsScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(32.0),
                   child: Container(
-                    child: Text("New",style: TextStyle(fontSize: 20),),
+                    child: Text("New",style: TextStyle(fontSize:16),),
                     decoration: BoxDecoration(
                       color: Color.fromARGB(255, 255, 129, 129),
                       borderRadius: BorderRadius.circular(5),
@@ -70,20 +70,18 @@ class DetailsScreen extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Icon(Icons.star,color: Colors.yellow,size: 30),
-
-
-                Icon(Icons.star,color: Colors.yellow,size: 30,),
-                Icon(Icons.star,color: Colors.yellow,size: 30),
-                Icon(Icons.star,color: Colors.yellow,size: 30),
-                Icon(Icons.star,color: Colors.yellow,size: 30),
+                    Icon(Icons.star,color: Colors.yellow,size:20),
+                Icon(Icons.star,color: Colors.yellow,size: 20,),
+                Icon(Icons.star,color: Colors.yellow,size: 20),
+                Icon(Icons.star,color: Colors.yellow,size: 20),
+                Icon(Icons.star,color: Colors.yellow,size: 20),
       ],
     ),
-                SizedBox(width: 50,),
+                SizedBox(width: 30,),
                 Row(children: [
-                  Icon(Icons.edit_location),
+                  Icon(Icons.edit_location,size: 22,),
                   SizedBox(width: 5,),
-                  Text("Flowers Shop",style: TextStyle(fontSize: 20),),
+                  Text("Flowers Shop",style: TextStyle(fontSize: 15),),
                 ],
                   
                 ),

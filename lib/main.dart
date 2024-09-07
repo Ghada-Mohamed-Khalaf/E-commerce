@@ -1,4 +1,5 @@
 
+import 'package:ecommerce/views/check_out.dart';
 import 'package:ecommerce/views/details_screen.dart';
 import 'package:ecommerce/views/home_page.dart';
 import 'package:ecommerce/views/login.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      debugShowCheckedModeBanner: false,
-     home: OnBoarding(),
+     home: CheckOut(),
     );
   }
 }

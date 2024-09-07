@@ -42,6 +42,9 @@ class CheckOut extends StatelessWidget {
   ],
       ),
       body: ListTile(
+        title: Text("Product"),
+
+        subtitle: Text("flower hhjjjj"),
 
 
 

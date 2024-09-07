@@ -2,6 +2,7 @@
 import 'package:ecommerce/views/details_screen.dart';
 import 'package:ecommerce/views/home_page.dart';
 import 'package:ecommerce/views/login.dart';
+import 'package:ecommerce/views/onboarding.dart';
 import 'package:ecommerce/views/sign_up.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      debugShowCheckedModeBanner: false,
-     home:DetailsScreen(),
+     home: OnBoarding(),
     );
   }
 }

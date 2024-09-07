@@ -1,3 +1,4 @@
+import 'package:ecommerce/views/home_page.dart';
 import 'package:ecommerce/views/sign_up.dart';
 import 'package:ecommerce/widgets/custom_button.dart';
 import 'package:ecommerce/widgets/custom_text_field.dart';
@@ -46,7 +47,7 @@ class Login extends StatelessWidget {
                 ),
       
                 TextButton (onPressed: (){  Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                  return  SignUp();
+                  return  HomePage();
                 }));
                 },
       

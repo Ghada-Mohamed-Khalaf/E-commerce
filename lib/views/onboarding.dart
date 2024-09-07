@@ -20,24 +20,23 @@ class OnBoarding extends StatelessWidget {
                 ),
             ),
 
-            // PageViewModel(
-            //   title: "Best collection  of  indoor & outdoor plants",
-            //   body:"Plants are fascinating and vital organisms that play a key role in the Earth's ecosystem",
-            //   image:Image.asset(
-            //     "assets/image/onboarding2.jpg",
-            //   ),
-            // ),
-            //     PageViewModel(
-            //       title: "Best collection  of  indoor & outdoor plants",
-            //       body:"Plants are fascinating and vital organisms that play a key role in the Earth's ecosystem",
-            //       image:Image.asset(
-            //         "assets/image/onboarding2.jpg",
-            //       ),
+            PageViewModel(
+              title: "Best collection  of  indoor & outdoor plants",
+              body:"Plants are fascinating and vital organisms that play a key role in the Earth's ecosystem",
+              image:Image.asset(
+                "assets/image/onboarding2.jpg",
+              ),
+            ),
+                PageViewModel(
+                  title: "Best collection  of  indoor & outdoor plants",
+                  body:"Plants are fascinating and vital organisms that play a key role in the Earth's ecosystem",
+                  image:Image.asset(
+                    "assets/image/onboarding2.jpg",
+                  ),
 
               // )),
 
-           // ),
-         ],
+            ), ],
           next: const Icon(Icons.arrow_forward),
           done: const Text(
             "Done",

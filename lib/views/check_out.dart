@@ -47,6 +47,8 @@ class CheckOut extends StatelessWidget {
         subtitle: Text("flower hhjjjj"),
 
 trailing: IconButton(onPressed: (){}, icon:Icon(Icons.remove)),
+        leading:CircleAvatar(backgroundImage: 
+          AssetImage("assets/image/3.jpg"),) ,
 
       ),
 
